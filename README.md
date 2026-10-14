@@ -67,9 +67,9 @@ The following table compares category-defining commercial SaaS platforms offerin
 
 For legal engineering teams, developers, and privacy-sensitive enterprises, open-source tools provide transparent, auditable clause libraries, self-hosted LLM redlining agents, and vendor-independent drafting pipelines.
 
-The repositories below are **sorted in descending order by GitHub Stars**:
+The repositories below are **sorted in descending order by GitHub_Stars**:
 
-| Repository | GitHub Stars | License | Primary Architectural Role & Focus |
+| Repository | GitHub_Stars | License | Primary Architectural Role & Focus |
 | :--- | :--- | :--- | :--- |
 | **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | AGPL-3.0 | ✍️ Self-hosted document signing and form-filling execution engine; provides open-source alternative to DocuSign for contract execution pipelines. |
 | **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** | [![Stars](https://img.shields.io/github/stars/OpenSignLabs/OpenSign?style=social&color=white)](https://github.com/OpenSignLabs/OpenSign/stargazers) | AGPL-3.0 | 🔏 Open-source e-signature solution built with Parse Server and React; exposes REST APIs for programmatic contract dispatch and signing. |
@@ -126,7 +126,7 @@ Contributions are welcome! Please help keep this legal tech resource comprehensi
 
 1. **Fork the repository** 🍴.
 2. **Create a branch**: `git checkout -b feature/add-engine-or-tool` 🌿.
-3. **Add or update entries**: Follow the existing table formatting (ensure pricing, free tier/trial limits, valuation/revenue, or GitHub star badges are provided) 📝.
+3. **Add or update entries**: Follow the existing table formatting (ensure pricing, free tier/trial limits, valuation/revenue, or GitHub Stars_Badges are provided) 📝.
 4. **Commit changes**: `git commit -m "Add [Engine Name] to list"` 💾.
 5. **Open a Pull Request** with a brief summary of why the tool fits the dynamic contract drafting category 🚀.
 
