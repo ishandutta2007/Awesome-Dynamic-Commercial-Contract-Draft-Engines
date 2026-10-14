@@ -1,227 +1,129 @@
-# Awesome-Dynamic-Commercial-Contract-Draft-Engines
+# Awesome Dynamic Commercial Contract Draft Engines
 
-## Top Dynamic Commercial Contract Draft Engines Ecosystem
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Tracked Stars](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Dynamic-Commercial-Contract-Draft-Engines)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Modular Drafting, Clause-Level Assembly & Deal-Specific Contract Generation*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Dynamic Commercial Contract Draft Engines**. These tools enable legal teams to auto-generate targeted contracts for unique client deals—assembling modular clauses, applying conditional logic, and adapting terms based on deal parameters without manual redrafting.
-
-
-
-**Examples** include Ironclad, Robin AI, Spellbook, ContractPodAi, Evisort, SpotDraft, LinkSquares, Juro, Lexion, and Malbek (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, clause-level composition, and open contract lifecycle management—ideal for legal engineers, in-house counsel, and developers seeking transparent, vendor-independent drafting infrastructure.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Ironclad](https://ironcladapp.com/)**  
-
-  Enterprise contract lifecycle management platform with strong execution layer—approvals, signatures, tracking. Features AI-assisted drafting, playbook enforcement, and workflow automation.
-
-
-
-- **[Robin AI](https://www.robinai.com/)**  
-
-  AI-powered contract drafting and review platform. Features clause library, negotiation support, and integration with Microsoft Word and CLM systems.
-
-
-
-- **[Spellbook](https://www.spellbook.legal/)**  
-
-  AI contract drafting assistant that works inside Microsoft Word. Suggests clauses, flags risks, and drafts language based on deal context.
-
-
-
-- **[ContractPodAi](https://contractpodai.com/)**  
-
-  AI-powered CLM with contract drafting, review, and negotiation capabilities. Features playbook automation and clause libraries.
-
-
-
-- **[Evisort](https://www.evisort.com/)**  
-
-  AI contract intelligence platform with drafting, review, and analytics. Extracts key terms from existing contracts to inform new drafts.
-
-
-
-- **[SpotDraft](https://www.spotdraft.com/)**  
-
-  Contract lifecycle management with AI-powered drafting, review, and workflow automation. Features clause library and playbook enforcement.
-
-
-
-- **[LinkSquares](https://linksquares.com/)**  
-
-  AI-powered contract management with drafting, review, and analytics. Features clause extraction and risk identification.
-
-
-
-- **[Juro](https://juro.com/)**  
-
-  Contract automation platform with browser-based editor. Features dynamic templates, conditional logic, and approval workflows.
-
-
-
-- **[Lexion](https://www.lexion.ai/)**  
-
-  AI contract management with drafting assistance and clause extraction. Acquired by Docusign.
-
-
-
-- **[Malbek](https://malbek.com/)**  
-
-  CLM platform with AI-assisted drafting, review, and workflow automation.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Accord Project](https://github.com/accordproject)**  
-
-  Linux Foundation project providing the open standard for smart legal contracts (Apache-2.0). Three components: **Concerto** (schema language generating TypeScript, Java, Go, Python, JSON Schema from one `.cto` file), **TemplateMark** (Markdown-based contract template with variables and conditional logic), and **APAP** (Agreement Protocol API with REST + MCP server for AI agents). **The most standards-based open-source contract drafting stack available** .
-
-
-
-- **[draftLegal](https://github.com/AniketTati/draft-legal)**  
-
-  Self-hosted, AI-native contract lifecycle management (open-source) positioned as Ironclad + Harvey alternative. Features **agent-first architecture** with ~30 tools over contracts—search, cite, compare, draft, redline, route approvals. **Eight specialist agents** (review, draft, redline, approval summary, playbook review, assist, ask, portfolio) run as background jobs. **Portfolio intelligence** with hybrid retrieval (pgvector + Elasticsearch + RRF fusion) lets you ask questions across your entire contract history. **Redline & negotiate** with conservative/moderate/aggressive counter-proposals and exact replacement language. Full lifecycle: approval workflows, in-platform e-signature, post-signature obligation tracking. **Bring your own model** (Anthropic, OpenAI, Google Gemini). **Your contracts never touch a third-party SaaS** .
-
-
-
-- **[Aakd](https://github.com/aaked-app/aakd)**  
-
-  Open-source, self-hostable AI-native contract lifecycle management for reviewed, source-linked contract operations (AGPL-3.0, early release). **Turns executed contracts into reviewed, owned actions**—from executed PDF/DOCX to cited contract facts, assigned obligations, deadlines, approvals, and completion evidence. **Source-linked facts and obligations** with page-level evidence. Human review and correction workflow. **AI is optional**—when enabled, assists with extraction, questions, risk signals, and obligation suggestions, but **AI output remains reviewable and is never the canonical source of contract truth**. Features REST API and scoped MCP endpoint for agent-assisted, human-controlled workflows. English, French, German, Spanish, Arabic RTL interfaces .
-
-
-
-- **[template-vault-cli](https://pypi.org/project/template-vault-cli/)**  
-
-  Git-backed, clause-aware legal-document template manager (PyPI). **Stores templates as plain files in a Git repo**—multi-user sync is `git pull` / `git push`. **Indexes templates with meta.json** per template: category, jurisdiction, tags, summary. **Searches by category, tag, jurisdiction, or keyword**. **Composes new templates by forking + swapping clauses, with provenance recorded**. **Upgrades derived templates when parents get new versions**—when parent gets v2, child pulls parent's other clause changes but leaves locally-swapped clauses alone. **The most practical open-source clause-level composition tool available** .
-
-
-
-- **[Mike OSS](https://github.com/willchen0011/mike)**  
-
-  Open-source legal AI platform (Azure edition available on Microsoft Marketplace). Features flexible model selection, legal workflows, project vaults to bring all matter documents together, personal document library, and **tabular data extraction for mass document review and contract processing**. **MCP connectors** to connect assistant to external tools and data sources. **Case-law research** grounded in real, citable court opinions via CourtListener. Document version control with tracked changes. Self-hosted within your Azure tenancy—**no data leaves your infrastructure** .
-
-
-
-- **[contract-review-agent](https://github.com/kipeum86/contract-review-agent)**  
-
-  Local-first AI agent that turns contracts into clause-level analysis with **tracked-change DOCX redlines** (open-source). **The most focused open-source contract review agent available** .
-
-
-
-- **[legal-redline-tools](https://github.com/evolsb/legal-redline-tools)**  
-
-  Open-source tools generating tracked-changes Word docs and redline PDFs from AI contract reviews .
-
-
-
-- **[OpenSign](https://github.com/OpenSignLabs/OpenSign)**  
-
-  Free open-source DocuSign alternative (Parse Server + React). Relevant for e-signature execution layer in open-source CLM stacks .
-
-
-
-- **[DocuSeal](https://github.com/docusealco/docuseal)**  
-
-  Open-source document signing platform (AGPL-3.0) with self-hosted and cloud options. Can serve as signature execution layer for contract workflows .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Wraft](https://github.com/wraft/wraft)** — Open-source document lifecycle management with version control. Relevant for contract document management .
-
-- **[Codify](https://pypi.org/project/codify-core/)** — Open-source legal codification and comparison tool with MCP server for AI agent access. Features jurisdiction-aware provision search and version comparison .
-
-- **[@petalo/contracts-wizard](https://www.npmjs.com/package/@petalo/contracts-wizard)** — Open-source CLI for generating contracts from Handlebars templates with Spanish locale support. Relevant for template-based contract generation .
-
-- **[华炎合同管理系统](https://www.npmjs.com/package/app-contracts-cl2)** — Open-source contract management system (Chinese) with low-code configuration for contract elements, counterparties, funds, progress, permissions, statistics, and approval workflows .
-
-- Community **n8n** workflows for contract generation automation and approval routing.
-
-
-
-**Frameworks for building custom systems**: Combine **Accord Project** for standards-based smart contract templates with **draftLegal** for AI-native drafting and portfolio intelligence, **template-vault-cli** for Git-backed clause composition, **Aakd** for source-linked obligation tracking, and **PostgreSQL** for persistence—creating a fully self-hosted, enterprise-grade contract draft engine.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Contract drafting systems handling legal agreements must comply with applicable professional responsibility rules and data protection regulations.
-
-- **Open-source contract drafting is emerging, not mature.** draftLegal provides comprehensive AI-native CLM with self-hosting . Accord Project provides standards-based templates . template-vault-cli provides clause-aware composition . **No single open-source tool provides the end-to-end drafting automation of Ironclad or Spellbook.** Integration work is required.
-
-- **AI-generated contract language requires attorney review.** draftLegal emphasizes "every write proposed on a confirm card first" . Aakd states "AI output remains reviewable and is never the canonical source of contract truth" . No autonomous drafting tool replaces legal judgment.
-
-- **Clause-level composition is the open-source sweet spot.** template-vault-cli's fork + swap + provenance model enables modular contract assembly without vendor lock-in . This is the most practical open-source approach to dynamic drafting.
-
-- Self-hosted open-source solutions require proper security hardening, LLM infrastructure (or API keys), and ongoing maintenance. Contract data is highly sensitive—access controls and audit trails are essential.
-
-
+> A curated list of leading enterprise SaaS platforms and self-hosted open-source repositories powering dynamic commercial contract draft engines, modular clause generation, automated redlining, smart legal templates, and Contract Lifecycle Management (CLM).
 
 ---
 
+## Table of Contents
 
+- [Overview](#overview)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [Enterprise SaaS Contract Engines](#enterprise-saas-contract-engines)
+- [Open-Source Contract Draft Engines & Tooling](#open-source-contract-draft-engines--tooling)
+- [Frameworks for Custom Contract Engines](#frameworks-for-custom-contract-engines)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
 
-**Made for legal engineers, in-house counsel, and developers building transparent contract drafting solutions.**
+---
 
-Let's make Dynamic Commercial Contract Draft Engines more open, data-driven, and modular.
+## Overview
+
+Modern commercial transactions require generating bespoke, deal-specific agreements without sacrificing institutional playbook standards. **Dynamic Commercial Contract Draft Engines** enable legal, procurement, and deal teams to auto-generate targeted contracts by dynamically assembling modular clauses, evaluating deal metadata, applying conditional logic, and embedding AI-assisted redlines into execution workflows.
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global Contract Lifecycle Management (CLM) and contract drafting engine market is valued at approximately **$1.8B – $2.8B** and is projected to expand at a compound annual growth rate (**CAGR of 11%–14%**) to over **$5.5B+ by the early 2030s**, propelled by enterprise adoption of Generative AI, clause automation, and risk mitigation.
+
+The sector is currently **moderately fragmented, but actively consolidating**: while niche AI point solutions (redlining assistants, Word add-ins, signature layers) proliferate, dominant enterprise CLM platforms and workflow giants (e.g., Docusign's acquisition of Lexion, Workday's acquisition of Evisort) continue absorbing vertical capabilities to offer end-to-end contract drafting, negotiation, and execution suites.
+
+---
+
+## Enterprise SaaS Contract Engines
+
+The following table compares category-defining commercial SaaS platforms offering dynamic contract drafting, clause libraries, automated playbook review, and end-to-end CLM. Platforms are sorted in descending order by estimated enterprise scale (valuation or acquisition value / annualized revenue).
+
+| Platform | Company Size (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier / Trial Limits | Core Drafting & Assembly Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Ironclad](https://ironcladapp.com/)** | **$3.2B Valuation** (~$200M+ ARR) | Quote-based; custom enterprise deployments (typically starts ~$800–$1,000/mo billed annually) | No free tier; demo sandbox available upon sales qualification | Enterprise CLM platform with Workflow Designer, AI-assisted drafting, conditional clause logic, playbook guardrails, and integrated e-signature. |
+| **[LinkSquares](https://linksquares.com/)** | **$800M Valuation** (Raised ~$164M) | Modular packaging; starting packages typically begin at ~$30,000/year | No free tier or self-serve trial; live sales-guided platform walkthrough available | AI contract intelligence and drafting hub (Analyze + Finalize + Sign) featuring smart clause extraction, risk assessment, and template automation. |
+| **[Evisort](https://www.evisort.com/)** | **$615M Valuation** (Acquired by Workday; ~$15M ARR) | Enterprise quote-based; custom packages via Workday enterprise sales | No free tier or self-serve trial; custom POC provided upon enterprise scoping | AI contract analytics and drafting engine; extracts historical terms and playbook standards to assemble and benchmark deal drafts. |
+| **[SpotDraft](https://www.spotdraft.com/)** | **~$400M Valuation** (~$15M ARR) | Quote-based; entry-level mid-market plans typically start ~$18,000–$20,000/year | No free tier; personalized sandbox trial available during sales evaluation | End-to-end CLM with automated modular drafting, clause library enforcement, dynamic questionnaire-based generation, and collaborative redlining. |
+| **[Spellbook](https://www.spellbook.legal/)** | **$350M Valuation** (~$20M+ ARR) | Paid plans start at **$99/user/month** (billed annually) up to ~$249–$299/user/month for Pro/Firm tiers | **7-day free trial** with full Word add-in features and limited AI token/clause generation quota | Native Microsoft Word AI co-pilot; drafts deal-tailored clauses, detects missing terms, auto-generates redlines, and enforces firm playbooks. |
+| **[ContractPodAi (Leah)](https://contractpodai.com/)** | **~$250M Valuation** (~$47M ARR; raised $179M) | Enterprise subscription; entry deployments start at ~$50,000/year | No free tier; sales-guided pilot environment available on request | GenAI-native legal copilot (*Leah*) embedded in full-suite CLM; provides clause assembly, interactive playbook redlining, and risk scores. |
+| **[Robin AI](https://www.robinai.com/)** | **~$150M Valuation** (~$10M–$15M ARR) | Paid plans start at **$5,000/year** for small teams; custom enterprise tiers | **Free tier available**: 1 user seat, up to **5 contracts/month**, and **10 AI queries/day** | Combines Anthropic Claude-backed legal LLMs with lawyer-in-the-loop review, clause repositioning, and Word-integrated contract drafting. |
+| **[Lexion](https://www.lexion.ai/)** | **$165M Acquisition** (Acquired by Docusign) | Modular enterprise pricing (integrated into Docusign IAM suites) | No free tier or self-serve trial; enterprise demo and guided sandbox on request | Intake-driven drafting workflows, AI clause extraction, automated contract repository indexing, and redline negotiation pipelines. |
+| **[Juro](https://juro.com/)** | **~$100M Valuation** (Raised ~$35M) | Tiered plans start at **$125/user/month** (annual contract; minimum seat requirements apply) | **14-day guided free trial** (up to 10 automated test contracts and standard browser editor access) | In-browser contract automation engine; dynamic templates with conditional branching, data validation tables, and native signing. |
+| **[Malbek](https://malbek.com/)** | **~$50M Valuation** (~$12M ARR; raised ~$20M) | Quote-based; core mid-market tiers typically start around **$20,000/year** | No self-serve free tier; trial environments available on request during procurement evaluation | Modular CLM with *Malbek AI* drafting and *BusinessIQ* clause analytics, multi-tier approvals, and bi-directional ERP/CRM sync. |
+
+---
+
+## Open-Source Contract Draft Engines & Tooling
+
+For legal engineering teams, developers, and privacy-sensitive enterprises, open-source tools provide transparent, auditable clause libraries, self-hosted LLM redlining agents, and vendor-independent drafting pipelines.
+
+The repositories below are **sorted in descending order by GitHub Stars**:
+
+| Repository | GitHub Stars | License | Primary Architectural Role & Focus |
+| :--- | :--- | :--- | :--- |
+| **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | AGPL-3.0 | Self-hosted document signing and form-filling execution engine; provides open-source alternative to DocuSign for contract execution pipelines. |
+| **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** | [![Stars](https://img.shields.io/github/stars/OpenSignLabs/OpenSign?style=social&color=white)](https://github.com/OpenSignLabs/OpenSign/stargazers) | AGPL-3.0 | Open-source e-signature solution built with Parse Server and React; exposes REST APIs for programmatic contract dispatch and signing. |
+| **[OpenContracts](https://github.com/Open-Source-Legal/OpenContracts)** | [![Stars](https://img.shields.io/github/stars/Open-Source-Legal/OpenContracts?style=social&color=white)](https://github.com/Open-Source-Legal/OpenContracts/stargazers) | Apache-2.0 | Open-source document intelligence and contract analytics platform with agentic PDF/DOCX parsing, layout analysis, vector embeddings, and clause annotation. |
+| **[claude-legal-skill](https://github.com/evolsb/claude-legal-skill)** | [![Stars](https://img.shields.io/github/stars/evolsb/claude-legal-skill?style=social&color=white)](https://github.com/evolsb/claude-legal-skill/stargazers) | MIT | AI contract review and drafting skill integrating CUAD risk detection, market clause benchmarks, and lawyer-ready automated redlines across AI IDEs. |
+| **[Accord Project: Template Archive](https://github.com/accordproject/template-archive)** | [![Stars](https://img.shields.io/github/stars/accordproject/template-archive?style=social&color=white)](https://github.com/accordproject/template-archive/stargazers) | Apache-2.0 | Standardized smart legal contract templates for Cicero / TemplateMark; provides open standards for parameter-driven clause assembly and execution. |
+| **[The Plain Contract](https://github.com/jackmorgan/the-plain-contract)** | [![Stars](https://img.shields.io/github/stars/jackmorgan/the-plain-contract?style=social&color=white)](https://github.com/jackmorgan/the-plain-contract/stargazers) | CC-BY-4.0 | Crowdsourced, modular freelance and commercial service contract template written in accessible plain English with interchangeable clause blocks. |
+| **[contract-review-pro](https://github.com/CSlawyer1985/contract-review-pro)** | [![Stars](https://img.shields.io/github/stars/CSlawyer1985/contract-review-pro?style=social&color=white)](https://github.com/CSlawyer1985/contract-review-pro/stargazers) | MIT | Professional contract audit skill for AI agents structured on formal legal contract review methodology, risk grading, and counter-clause drafting. |
+| **[Accord Project: Ergo](https://github.com/accordproject/ergo)** | [![Stars](https://img.shields.io/github/stars/accordproject/ergo?style=social&color=white)](https://github.com/accordproject/ergo/stargazers) | Apache-2.0 | Formally defined, domain-specific programming language for executable legal contract logic and deterministic clause-level computational enforcement. |
+| **[Wraft](https://github.com/wraft/wraft)** | [![Stars](https://img.shields.io/github/stars/wraft/wraft?style=social&color=white)](https://github.com/wraft/wraft/stargazers) | GPL-3.0 | Git-inspired document lifecycle management platform offering granular version tracking, revision branches, and collaborative legal drafting. |
+| **[Contract-Builder](https://github.com/blopa/Contract-Builder)** | [![Stars](https://img.shields.io/github/stars/blopa/Contract-Builder?style=social&color=white)](https://github.com/blopa/Contract-Builder/stargazers) | MIT | Interactive web application for building, customizing, and exporting modular legal contracts from dynamic variable forms. |
+| **[Ally Legal Assistant](https://github.com/Azure-Samples/ally-legal-assistant)** | [![Stars](https://img.shields.io/github/stars/Azure-Samples/ally-legal-assistant?style=social&color=white)](https://github.com/Azure-Samples/ally-legal-assistant/stargazers) | MIT | Microsoft Word plugin powered by Azure OpenAI for clause analysis, interactive contract Q&A, and real-time tracked-changes markup. |
+| **[Vaquill MS Word Add-in](https://github.com/Vaquill-AI/ms-word-addin)** | [![Stars](https://img.shields.io/github/stars/Vaquill-AI/ms-word-addin?style=social&color=white)](https://github.com/Vaquill-AI/ms-word-addin/stargazers) | Apache-2.0 | Open-source MS Word legal assistant task-pane add-in supporting playbook-guided drafting, clause suggestions, and legal research. |
+| **[legal-redline-tools](https://github.com/evolsb/legal-redline-tools)** | [![Stars](https://img.shields.io/github/stars/evolsb/legal-redline-tools?style=social&color=white)](https://github.com/evolsb/legal-redline-tools/stargazers) | MIT | Programmatic utilities for converting AI review output directly into native Word (.docx) tracked changes and redline PDFs. |
+| **[contract-review-agent](https://github.com/lowtidebuild/contract-review)** | [![Stars](https://img.shields.io/github/stars/lowtidebuild/contract-review?style=social&color=white)](https://github.com/lowtidebuild/contract-review/stargazers) | MIT | Local-first AI agent parsing agreements into clause-level risk assessments with automated tracked-change DOCX generation. |
+| **[Accord Project: Template Engine](https://github.com/accordproject/template-engine)** | [![Stars](https://img.shields.io/github/stars/accordproject/template-engine?style=social&color=white)](https://github.com/accordproject/template-engine/stargazers) | Apache-2.0 | The core parsing and rendering engine transforming TemplateMark markdown legal agreements into structured JSON data models and vice versa. |
+| **[draftLegal](https://github.com/AniketTati/draft-legal)** | [![Stars](https://img.shields.io/github/stars/AniketTati/draft-legal?style=social&color=white)](https://github.com/AniketTati/draft-legal/stargazers) | AGPL-3.0 | Self-hosted, AI-native CLM platform (Ironclad + Harvey alternative) featuring 8 specialized background agents, hybrid retrieval (pgvector + ES), and local LLM redlining. |
+| **[Aakd](https://github.com/aaked-app/aakd)** | [![Stars](https://img.shields.io/github/stars/aaked-app/aakd?style=social&color=white)](https://github.com/aaked-app/aakd/stargazers) | AGPL-3.0 | Self-hosted contract operations platform; extracts facts and obligations with page-level citations and provides scoped MCP endpoints for AI agent workflows. |
+
+### Supplementary Open-Source & Package Ecosystem
+- **[template-vault-cli](https://pypi.org/project/template-vault-cli/)** *(Python CLI)* — Git-backed, clause-aware legal document template manager allowing teams to fork, swap clauses, and preserve clause provenance.
+- **[Codify](https://pypi.org/project/codify-core/)** *(Python/MCP)* — Open legal codification tool with Model Context Protocol (MCP) server for AI agent provision search and comparison.
+- **[@petalo/contracts-wizard](https://www.npmjs.com/package/@petalo/contracts-wizard)** *(npm)* — Command-line interface for dynamic contract generation from modular Handlebars templates.
+- **[华炎合同管理系统](https://www.npmjs.com/package/app-contracts-cl2)** *(npm)* — Low-code Chinese contract management platform supporting counterparty tracking, approval flows, and dynamic contract components.
+
+---
+
+## Frameworks for Custom Contract Engines
+
+To build a private, enterprise-ready dynamic commercial contract draft engine without vendor lock-in, consider orchestrating these best-of-breed open-source building blocks:
+
+```mermaid
+flowchart TD
+    A["Deal Intake / Webform\n(CRM / ERP Trigger)"] --> B["Clause Rules Engine\n(TemplateMark & template-vault-cli)"]
+    B --> C["Assembly & Logic Engine\n(Accord Project Ergo)"]
+    C --> D["AI Redline & Playbook Check\n(draftLegal / OpenContracts / claude-legal-skill)"]
+    D --> E["Native DOCX Tracked Changes\n(legal-redline-tools)"]
+    E --> F["Self-Hosted E-Signature\n(DocuSeal / OpenSign)"]
+    F --> G["Post-Signature Obligations\n(Aakd / PostgreSQL)"]
+```
+
+1. **Template & Schema Layer**: Use **[Accord Project](https://github.com/accordproject/template-archive)** (`TemplateMark` & `Concerto`) or **[template-vault-cli](https://pypi.org/project/template-vault-cli/)** for Git-backed clause versioning and template modularity.
+2. **Logic & Computation**: Use **[Ergo](https://github.com/accordproject/ergo)** for executing deterministic conditions, discount calculations, and compliance rules.
+3. **AI Drafting & Playbook Enforcement**: Deploy **[draftLegal](https://github.com/AniketTati/draft-legal)** or **[OpenContracts](https://github.com/Open-Source-Legal/OpenContracts)** with your private LLM endpoint (Ollama / vLLM / Gemini / Claude).
+4. **Redline Generation**: Integrate **[legal-redline-tools](https://github.com/evolsb/legal-redline-tools)** to compile AI suggested edits into standard Microsoft Word tracked-change revisions.
+5. **Execution & Signature**: Route output documents to self-hosted **[DocuSeal](https://github.com/docusealco/docuseal)** or **[OpenSign](https://github.com/OpenSignLabs/OpenSign)**.
+6. **Post-Signature Obligation Tracking**: Ingest signed artifacts into **[Aakd](https://github.com/aaked-app/aakd)** to map audit rights, renewal notices, and milestone obligations.
+
+---
+
+## How to Contribute
+
+Contributions are welcome! Please help keep this legal tech resource comprehensive and up-to-date:
+
+1. **Fork the repository**.
+2. **Create a branch**: `git checkout -b feature/add-engine-or-tool`.
+3. **Add or update entries**: Follow the existing table formatting (ensure pricing, free tier/trial limits, valuation/revenue, or GitHub star badges are provided).
+4. **Commit changes**: `git commit -m "Add [Engine Name] to list"`.
+5. **Open a Pull Request** with a brief summary of why the tool fits the dynamic contract drafting category.
+
+---
+
+## Disclaimer
+
+- This repository is a community-curated directory intended for research, software architecture, and evaluation purposes; it does not constitute legal advice.
+- Commercial contract drafting engines and AI models must be validated by licensed attorneys to ensure professional responsibility compliance and jurisdiction-specific enforceability.
+- All trademarks and product names belong to their respective copyright holders.
